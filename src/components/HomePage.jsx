@@ -80,38 +80,6 @@ export default function HomePage() {
             icon="🎊"
             delay={0}
           />
-          <DataCard
-            to="/event/all"
-            image="https://lh3.googleusercontent.com/d/1G2bE7jssSgpwqh9ekELRNx0C9gKBOxRH=s800"
-            label="All Events"
-            count={gallery.total_photos ?? photos.length}
-            icon="🎊"
-            delay={0}
-          />
-          <DataCard
-            to="/event/all"
-            image="https://lh3.googleusercontent.com/d/1G2bE7jssSgpwqh9ekELRNx0C9gKBOxRH=s800"
-            label="All Events"
-            count={gallery.total_photos ?? photos.length}
-            icon="🎊"
-            delay={0}
-          />
-          <DataCard
-            to="/event/all"
-            image="https://lh3.googleusercontent.com/d/1G2bE7jssSgpwqh9ekELRNx0C9gKBOxRH=s800"
-            label="All Events"
-            count={gallery.total_photos ?? photos.length}
-            icon="🎊"
-            delay={0}
-          />
-          <DataCard
-            to="/event/all"
-            image="https://lh3.googleusercontent.com/d/1G2bE7jssSgpwqh9ekELRNx0C9gKBOxRH=s800"
-            label="All Events"
-            count={gallery.total_photos ?? photos.length}
-            icon="🎊"
-            delay={0}
-          />
 
           {/* Sub-event cards */}
           {event_sections.map((section, i) => (

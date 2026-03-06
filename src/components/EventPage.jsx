@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import galleryData from '../data.json';
 import SelfieFilter from './SelfieFilter';
@@ -16,6 +16,11 @@ export default function EventPage() {
   const isAll = sectionId === 'all';
   const section = isAll ? null : event_sections.find(s => s.id === sectionId);
   const sectionLabel = isAll ? 'All Events' : (section?.label || sectionId);
+
+  // Scroll to top on page load / route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [sectionId]);
 
   // ── State ──
   const [loading, setLoading] = useState(false);

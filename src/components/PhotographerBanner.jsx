@@ -22,15 +22,17 @@ export default function PhotographerBanner({ photographer, gallery, onYourPhotos
   useEffect(() => {
     const els = containerRef.current?.querySelectorAll('[data-reveal]') ?? [];
     els.forEach(el => {
+      const isScroll = el.classList.contains(styles.scrollDown);
       el.style.opacity = '0';
-      el.style.transform = 'translateY(18px)';
+      el.style.transform = isScroll ? 'translateX(-50%) translateY(18px)' : 'translateY(18px)';
     });
     const timer = setTimeout(() => {
       els.forEach((el, i) => {
+        const isScroll = el.classList.contains(styles.scrollDown);
         const delay = parseFloat(el.dataset.reveal ?? i * 0.18);
         el.style.transition = `opacity 0.9s cubic-bezier(0.25,0.1,0.25,1) ${delay}s, transform 0.9s cubic-bezier(0.25,0.1,0.25,1) ${delay}s`;
         el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
+        el.style.transform = isScroll ? 'translateX(-50%) translateY(0)' : 'translateY(0)';
       });
     }, 80); // slight delay so page paint completes first
     return () => clearTimeout(timer);
@@ -51,7 +53,7 @@ export default function PhotographerBanner({ photographer, gallery, onYourPhotos
 
         {/* Lines above names */}
         <div data-reveal="0.35" className={styles.ornamentWrap}>
-          <img src="/lines.svg" alt="" className={styles.linesImg} />
+          <img src="../../public/lines.svg" alt="" className={styles.linesImg} />
         </div>
 
         {/* Groom name */}
@@ -70,7 +72,7 @@ export default function PhotographerBanner({ photographer, gallery, onYourPhotos
 
         {/* Lines below names */}
         <div data-reveal="1.15" className={styles.ornamentWrap}>
-          <img src="/lines.svg" alt="" className={`${styles.linesImg} ${styles.linesFlip}`} />
+          <img src="../../public/lines.svg" alt="" className={`${styles.linesImg} ${styles.linesFlip}`} />
         </div>
 
         {/* Photographer line */}
