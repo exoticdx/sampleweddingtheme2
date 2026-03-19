@@ -23,22 +23,22 @@
   align-items: center;
   gap: 8px;
   padding: 12px 28px;
-  background: #45a287;
+  background: #ededd5;
   border: 1.5px solid rgba(237, 237, 213, 0.3);
   border-radius: 100px;
   font-family: 'CustomTextFont', sans-serif;
   font-size: 18px;
   font-weight: normal;
   letter-spacing: 0.04em;
-  color: #ededd5;
+  color: #c80036;
   cursor: pointer;
   transition: all 0.28s;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .uploadBtn span { font-size: 20px; }
 .uploadBtn:hover {
-  background: #268f74;
-  border-color: #ededd5;
+  background: #ededd5;
+  border-color: #c80036;
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }

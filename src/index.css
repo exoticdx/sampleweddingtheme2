@@ -19,12 +19,12 @@
   --royal-blue: #ededd5; /* Used for headings and primary accents */
   --royal-deep: #d5d5be;
   
-  --sage: #45a287; /* Green accent */
-  --sage-light: #65b8a0;
+  --sage: #c80036; /* Green accent */
+  --sage-light: #c80036;
   
   --cream: #ededd5; /* Cream base */
   --cream-dark: #d5d5be;
-  --midnight: #45a287;
+  --midnight: #c80036;
   --star: #ededd5;
 
   /* Gold redefined to Cream to match theme */
@@ -54,7 +54,7 @@
   --surface3: rgba(237, 237, 213, 0.2);
   --heading: #ededd5;
   --white: #ededd5;
-  --maroon: #45a287;
+  --maroon: #c80036;
   --maroon-dim: rgba(69, 162, 135, 0.08);
 }
 
@@ -64,7 +64,7 @@ html {
 }
 
 body {
-  background: #45a287;
+  background: #c80036;
   color: var(--text-body);
   font-family: "CustomTextFont", sans-serif;
   font-size: 15px;
