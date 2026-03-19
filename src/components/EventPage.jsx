@@ -86,7 +86,7 @@ export default function EventPage() {
       <Footer photographer={photographer} gallery={gallery} />
 
       {/* ── Hire Us FAB ── */}
-      <HireUsFab photographer={photographer} />
+      {/* <HireUsFab photographer={photographer} /> */}
 
       {/* ── Lightbox ── */}
       {lightboxPhoto && (
